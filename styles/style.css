@@ -1,0 +1,161 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-size: 20px; 
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+header, main, footer {
+  width: 90%;
+  max-width: 800px;
+  margin-bottom: 2rem;
+}
+
+
+h1 { font-size: 3.5rem; color: #ffcc00; margin-bottom: 0.5rem; }
+h2 { font-size: 1.5rem; font-weight: normal; line-height: 1.4; }
+h3 { font-size: 2rem; display: inline-block; }
+
+.hobby ol {
+  display: inline-block;
+  text-align: left;
+  font-size: 1.3rem;
+  line-height: 1.8;
+}
+
+footer h2 {
+  font-size: 2.5rem;
+  font-style: italic;
+  color: #ffcc00;
+}
+.hobby ol {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+}
+
+.hobby li {
+    flex: 1;
+    background: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+}
+header, main, footer {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+    
+    header {
+        text-align: left;
+    }
+}
+.hobby-list li {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+img {
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    max-width: 300px;
+    display: block;
+    margin: 20px auto;
+}
+.tg {
+  background-color: #0088CC;
+  box-shadow: 0 4px 15px rgba(0, 136, 204, 0.3);
+  display: inline-block;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-weight: bold;
+  font-family: sans-serif;
+  transition: all 0.3s ease;
+  min-width: 200px;
+  text-align: center;
+  margin: 10px;
+}
+.tg:hover {
+  background-color: #0077B5;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 136, 204, 0.4);
+}
+.fb {
+  background-color: #4267B2;
+  box-shadow: 0 4px 15px rgba(66, 103, 178, 0.3);
+  display: inline-block;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-weight: bold;
+  font-family: sans-serif;
+  transition: all 0.3s ease;
+  min-width: 200px;
+  text-align: center;
+  margin: 10px;
+}
+.fb:hover {
+  background-color: #365899;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(66, 103, 178, 0.4);
+}
+
+.af {
+  background-color: #39ff14;
+  color: black;
+  box-shadow: 0 4px 15px rgba(57, 255, 20, 0.3);
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-weight: bold;
+  font-family: sans-serif;
+  transition: all 0.3s ease;
+  min-width: 200px;
+  text-align: center;
+  margin: 10px;
+}
+.af:hover {
+  background-color: #32e012;
+  box-shadow: 0 6px 20px rgba(57, 255, 20, 0.5);
+}
+a {
+  text-decoration: none;
+}
+.yt {
+  background-color: #FF0000;
+  box-shadow: 0 4px 15px rgba(255, 0, 0, 0.4);
+  display: inline-block;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-weight: bold;
+  font-family: sans-serif;
+  transition: all 0.3s ease;
+  min-width: 200px;
+  text-align: center;
+  margin: 10px;
+}
+.yt:hover {
+  background-color: #CC0000;
+  box-shadow: 0 6px 12px rgba(255, 0, 0, 0.5);
+  transform: translateY(-2px);
+}
