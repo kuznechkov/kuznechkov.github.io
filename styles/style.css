@@ -44,7 +44,8 @@ footer h2 {
     display: flex;
     gap: 40px;
     list-style: none;
-    padding: 0;
+    padding: 15px;
+    margin-bottom: 10px;
 }
 
 .hobby li {
