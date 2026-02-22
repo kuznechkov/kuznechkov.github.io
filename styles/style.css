@@ -159,7 +159,7 @@ a {
   box-shadow: 0 6px 12px rgba(255, 0, 0, 0.5);
   transform: translateY(-2px);
 }
-.dс {
+.dc {
   background-color: #5865F2;
   box-shadow: 0 4px 15px rgba(88, 101, 242, 0.3);
   display: inline-block;
@@ -173,7 +173,7 @@ a {
   text-align: center;
   margin: 10px;
 }
-.dс:hover {
+.dc:hover {
   background-color: #4752C4;
   transform: translateY(-3px);
   box-shadow: 0 6px 20px rgba(88, 101, 242, 0.4);
