@@ -159,3 +159,22 @@ a {
   box-shadow: 0 6px 12px rgba(255, 0, 0, 0.5);
   transform: translateY(-2px);
 }
+.dс {
+  background-color: #5865F2;
+  box-shadow: 0 4px 15px rgba(88, 101, 242, 0.3);
+  display: inline-block;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-weight: bold;
+  font-family: sans-serif;
+  transition: all 0.3s ease;
+  min-width: 200px;
+  text-align: center;
+  margin: 10px;
+}
+.dс:hover {
+  background-color: #4752C4;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(88, 101, 242, 0.4);
+}
