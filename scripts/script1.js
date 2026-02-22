@@ -17,4 +17,15 @@ cat.addEventListener('click', () => {
     audio.play();
 });
 
+const btn = document.getElementById('show-socials-btn');
+const list = document.getElementById('socials-list');
 
+btn.onclick = function() {
+  list.classList.toggle('active');
+    
+  if (list.classList.contains('active')) {
+    btn.innerText = "Скрыть контакты ▲";
+  } else {
+    btn.innerText = "Связаться со мной ▼";
+  }
+};
