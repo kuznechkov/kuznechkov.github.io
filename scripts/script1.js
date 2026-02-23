@@ -24,8 +24,8 @@ btn.onclick = function() {
   list.classList.toggle('active');
     
   if (list.classList.contains('active')) {
-    btn.innerText = "Скрыть контакты ▲";
+    btn.innerText = "Скрыть ▲";
   } else {
-    btn.innerText = "Связаться со мной ▼";
+    btn.innerText = "Мои профили ▼";
   }
 };
