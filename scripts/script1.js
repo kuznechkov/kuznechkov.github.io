@@ -29,3 +29,13 @@ btn.onclick = function() {
     btn.innerText = "Мои профили ▼";
   }
 };
+
+const today = new Date();
+if (today.getDate() === 24 && today.getMonth() === 1) {
+    confetti({
+        particleCount: 150,
+        spread: 70,
+        origin: { y: 0.6 },
+        colors: ['#ff0000', '#00ff00', '#0000ff', '#ffd700']
+    });
+}
