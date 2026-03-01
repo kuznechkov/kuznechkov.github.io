@@ -1,7 +1,7 @@
 const cat = document.getElementById('cat-pic');
 const result = document.getElementById('cat-result');
 const status = document.getElementById('cat-status');
-const audio = document.getElementById('fart');
+const audio = document.getElementById('boowomp');
 
 cat.addEventListener('click', () => {
     cat.style.display = "none"; 
