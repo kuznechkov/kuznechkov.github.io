@@ -1,41 +1,12 @@
-const cat = document.getElementById('cat-pic');
-const result = document.getElementById('cat-result');
-const status = document.getElementById('cat-status');
-const audio = document.getElementById('boowomp');
-
-cat.addEventListener('click', () => {
-    cat.style.display = "none"; 
-    
-    result.style.display = "block"; 
-    
-    status.innerText = "Котик восседает в Преисподней";
-    status.style.color = "#ff4444";
-
-    console.log("Вторая стадия активирована!");
-    
-    audio.volume = 0.5;
-    audio.play();
-});
-
 const btn = document.getElementById('show-socials-btn');
 const list = document.getElementById('socials-list');
 
-btn.onclick = function() {
+btn.addEventListener('click', () => {
   list.classList.toggle('active');
-    
-  if (list.classList.contains('active')) {
-    btn.innerText = "Скрыть ▲";
-  } else {
-    btn.innerText = "Мои профили ▼";
-  }
-};
 
-const today = new Date();
-if (today.getDate() === 24 && today.getMonth() === 1) {
-    confetti({
-        particleCount: 150,
-        spread: 70,
-        origin: { y: 0.6 },
-        colors: ['#ff0000', '#00ff00', '#0000ff', '#ffd700']
-    });
-}
+  if (list.classList.contains('active')) {
+    btn.innerHTML = 'Скрыть <i class="fa-solid fa-chevron-up"></i>';
+  } else {
+    btn.innerHTML = 'Мои профили <i class="fa-solid fa-chevron-down"></i>';
+  }
+});
