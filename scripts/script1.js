@@ -30,3 +30,14 @@ socialsBtn.addEventListener('click', () => {
   socialsBtn.innerHTML = `${label} <i class="fa-solid fa-chevron-down chevron"></i>`;
   if (isOpen) socialsBtn.classList.add('open');
 });
+
+const hobbyBtn  = document.getElementById('hobby-btn');
+const hobbyList = document.getElementById('hobby-list');
+
+hobbyBtn.addEventListener('click', () => {
+  const isOpen = hobbyList.classList.toggle('active');
+  hobbyBtn.classList.toggle('open', isOpen);
+  const label = isOpen ? 'Скрыть хобби' : 'Показать хобби';
+  hobbyBtn.innerHTML = `${label} <i class="fa-solid fa-chevron-down chevron"></i>`;
+  if (isOpen) hobbyBtn.classList.add('open');
+});
