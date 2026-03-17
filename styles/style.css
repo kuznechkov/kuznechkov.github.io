@@ -27,7 +27,7 @@
   --border-color:    #334155;
   --shadow:          0 4px 6px -1px rgba(0, 0, 0, 0.5);
 }
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; outline: none !important; }
 html { scroll-behavior: smooth; }
 
 body {
