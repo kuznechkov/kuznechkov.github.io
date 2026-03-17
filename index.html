@@ -1,49 +1,78 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" data-theme="light">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <link rel="stylesheet" href="styles/style.css">
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Montserrat:wght@500;700;900&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
-  <title>Био</title>
+  <link rel="stylesheet" href="styles/style.css"/>
+  <title>Саня</title>
 </head>
 <body>
-  <header class="hero">
-    <h1>О себе</h1>
-    <h2 class="subtitle">Я <span>Саня</span>. Начинающий веб-разработчик. Познаю веб-кодинг с 19.02.2026.</h2>
-  </header>
-
-  <main>
-    <section class="hobbies" aria-labelledby="hobbies-title">
-      <h2 id="hobbies-title">Мои хобби:</h2>
-      <ul class="hobby-list">
-        <li><i class="fa-solid fa-cube"></i> Играю в Minecraft большую часть своей жизни.</li>
-        <li><i class="fa-solid fa-bomb"></i> Иногда играю в сапер.</li>
-      </ul>
-    </section>
-
-    <section class="socials-section">
-      <button id="show-socials-btn" class="toggle-btn">Мои профили <i class="fa-solid fa-chevron-down"></i></button>
-      <nav id="socials-list" class="socials-list">
-        <a href="https://t.me/kuznechkov" class="social-link tg" target="_blank"><i class="fa-brands fa-telegram"></i> Telegram</a>
-        <a href="https://youtube.com/@kuznechkov" class="social-link yt" target="_blank"><i class="fa-brands fa-youtube"></i> YouTube</a>
-        <a href="https://discord.com/users/1363404324453093396" class="social-link dc" target="_blank"><i class="fa-brands fa-discord"></i> Discord</a>
-        <a href="https://anime.fans/id41228" class="social-link af" target="_blank"><i class="fa-solid fa-user-ninja"></i> anime.fans</a>
-        <a href="https://www.facebook.com/share/1Dc8ZZ1DwD/" class="social-link fb" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a>
-      </nav>
-    </section>
-  </main>
-
-  <footer>
-    <h3>Заключение:</h3>
-    <p>Я Саня.</p>
-  </footer>   
-
+  <div class="page">
+    <div class="topbar">
+      <button class="theme-btn" id="theme-btn" title="Сменить тему" aria-label="Переключить тему">
+        <i id="theme-icon" class="fa-solid fa-moon"></i>
+      </button>
+    </div>
+    <header class="hero">
+      <h1 class="hero-name">Привет, я <span>Саня</span></h1>
+      <p class="hero-desc">Начинающий веб-разработчик. Познаю веб-кодинг с&nbsp;19.02.2026.</p>
+    </header>
+    <main>
+      <section aria-labelledby="hobbies-label">
+        <p class="section-label" id="hobbies-label">Хобби</p>
+        <ul class="hobby-list">
+          <li>
+            <div class="hobby-icon"><i class="fa-solid fa-cube"></i></div>
+            Играю в Minecraft большую часть своей жизни
+          </li>
+          <li>
+            <div class="hobby-icon"><i class="fa-solid fa-bomb"></i></div>
+            Иногда играю в сапёр
+          </li>
+        </ul>
+      </section>
+      <section class="socials-section">
+        <p class="section-label">Профили</p>
+        <button class="toggle-btn" id="socials-btn">
+          Показать профили <i class="fa-solid fa-chevron-down chevron"></i>
+        </button>
+        <nav class="socials-list" id="socials-list" aria-label="Профили">
+          <a href="https://t.me/kuznechkov" class="social-link tg" target="_blank" rel="noopener">
+            <div class="s-icon"><i class="fa-brands fa-telegram"></i></div>
+            Telegram
+            <i class="fa-solid fa-arrow-right s-arrow"></i>
+          </a>
+          <a href="https://youtube.com/@kuznechkov" class="social-link yt" target="_blank" rel="noopener">
+            <div class="s-icon"><i class="fa-brands fa-youtube"></i></div>
+            YouTube
+            <i class="fa-solid fa-arrow-right s-arrow"></i>
+          </a>
+          <a href="https://discord.com/users/1363404324453093396" class="social-link dc" target="_blank" rel="noopener">
+            <div class="s-icon"><i class="fa-brands fa-discord"></i></div>
+            Discord
+            <i class="fa-solid fa-arrow-right s-arrow"></i>
+          </a>
+          <a href="https://anime.fans/id41228" class="social-link af" target="_blank" rel="noopener">
+            <div class="s-icon"><i class="fa-solid fa-user-ninja"></i></div>
+            anime.fans
+            <i class="fa-solid fa-arrow-right s-arrow"></i>
+          </a>
+          <a href="https://www.facebook.com/share/1Dc8ZZ1DwD/" class="social-link fb" target="_blank" rel="noopener">
+            <div class="s-icon"><i class="fa-brands fa-facebook"></i></div>
+            Facebook
+            <i class="fa-solid fa-arrow-right s-arrow"></i>
+          </a>
+        </nav>
+      </section>
+    </main>
+    <footer>
+      <p>Сделано Саней | 17.03.2026</p>
+    </footer>
+  </div>
   <script src="scripts/script1.js"></script>
 </body>
 </html>
