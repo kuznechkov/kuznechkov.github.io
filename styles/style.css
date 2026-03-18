@@ -27,7 +27,13 @@
   --border-color:    #334155;
   --shadow:          0 4px 6px -1px rgba(0, 0, 0, 0.5);
 }
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; outline: none !important; }
+*, *::before, *::after { 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
 html { scroll-behavior: smooth; }
 
 body {
